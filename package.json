@@ -1,0 +1,31 @@
+{
+  "name": "gauss-elimination",
+  "version": "0.0.1",
+  "description": "gauss jordan elimination ",
+  "main": "gauss.js",
+  "scripts": {
+    "test": "mocha test/test.js",
+    "install": "node-gyp rebuild"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cereceres/gauss-elimination.git"
+  },
+  "keywords": [
+    "gauss",
+    "jordan",
+    "matrix",
+    "inverse"
+  ],
+  "author": "Jesus Cereceres",
+  "license": "MIT",
+  "gypfile": true,
+  "bugs": {
+    "url": "https://github.com/Cereceres/gauss-elimination/issues"
+  },
+  "homepage": "https://github.com/Cereceres/gauss-elimination#readme",
+  "dependencies": {
+    "bindings": "^1.2.1",
+    "nan": "^2.2.0"
+  }
+}
