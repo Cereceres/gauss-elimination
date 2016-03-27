@@ -1,5 +1,5 @@
 {
-  "name": "gauss-elimination",
+  "name": "gauss-jordan-inverse",
   "version": "0.0.1",
   "description": "gauss jordan elimination ",
   "main": "gauss.js",
@@ -27,5 +27,8 @@
   "dependencies": {
     "bindings": "^1.2.1",
     "nan": "^2.2.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.4.5"
   }
 }
