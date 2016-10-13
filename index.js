@@ -1,2 +1,2 @@
 'use strict'
-module.exports = require('bindings')('multiply');
+module.exports = require('bindings')('gauss');

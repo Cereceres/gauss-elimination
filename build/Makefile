@@ -308,8 +308,8 @@ ifeq ($(strip $(foreach prefix,$(NO_LOAD),\
 endif
 
 quiet_cmd_regen_makefile = ACTION Regenerating $@
-cmd_regen_makefile = cd $(srcdir); /usr/lib/node_modules/npm/node_modules/node-gyp/gyp/gyp_main.py -fmake --ignore-environment "--toplevel-dir=." -I/home/denise/gauss-elimination/build/config.gypi -I/usr/lib/node_modules/npm/node_modules/node-gyp/addon.gypi -I/home/denise/.node-gyp/5.9.1/include/node/common.gypi "--depth=." "-Goutput_dir=." "--generator-output=build" "-Dlibrary=shared_library" "-Dvisibility=default" "-Dnode_root_dir=/home/denise/.node-gyp/5.9.1" "-Dnode_gyp_dir=/usr/lib/node_modules/npm/node_modules/node-gyp" "-Dnode_lib_file=node.lib" "-Dmodule_root_dir=/home/denise/gauss-elimination" binding.gyp
-Makefile: $(srcdir)/../.node-gyp/5.9.1/include/node/common.gypi $(srcdir)/build/config.gypi $(srcdir)/binding.gyp $(srcdir)/../../../usr/lib/node_modules/npm/node_modules/node-gyp/addon.gypi
+cmd_regen_makefile = cd $(srcdir); /home/cereceres/.npm-global/lib/node_modules/node-gyp/gyp/gyp_main.py -fmake --ignore-environment "--toplevel-dir=." -I/home/cereceres/gauss-elimination/build/config.gypi -I/home/cereceres/.npm-global/lib/node_modules/node-gyp/addon.gypi -I/home/cereceres/.node-gyp/6.7.0/include/node/common.gypi "--depth=." "-Goutput_dir=." "--generator-output=build" "-Dlibrary=shared_library" "-Dvisibility=default" "-Dnode_root_dir=/home/cereceres/.node-gyp/6.7.0" "-Dnode_gyp_dir=/home/cereceres/.npm-global/lib/node_modules/node-gyp" "-Dnode_lib_file=node.lib" "-Dmodule_root_dir=/home/cereceres/gauss-elimination" binding.gyp
+Makefile: $(srcdir)/../.node-gyp/6.7.0/include/node/common.gypi $(srcdir)/../.npm-global/lib/node_modules/node-gyp/addon.gypi $(srcdir)/build/config.gypi $(srcdir)/binding.gyp
 	$(call do_cmd,regen_makefile)
 
 # "all" is a concatenation of the "all" targets from all the included
